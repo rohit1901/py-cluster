@@ -34,3 +34,14 @@ def load_data(filename):
         for line in file:
             data.append([float(x) for x in line.strip().split()])
     return data
+
+
+def load_clustering_data(filename):
+    return np.loadtxt(filename)
+
+
+def get_dimensions_and_samples(data):
+    """Get the number of dimensions (D) and data samples (N)."""
+    D = data.shape[1]
+    N = data.shape[0]
+    return D, N

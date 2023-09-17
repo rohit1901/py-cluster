@@ -4,6 +4,7 @@ import datetime
 from data_utils import load_data
 from classify_unknown_samples import classify_unknown_samples
 
+
 # This function loads the data from the files
 # the filesnames depend on the number of dimensions passed to the function
 def get_data(dimensions):
@@ -11,6 +12,7 @@ def get_data(dimensions):
     red_data = load_data(f"datasets/red_{dimensions}d.txt")
     blue_data = load_data(f"datasets/blue_{dimensions}d.txt")
     return unknown_data, red_data, blue_data
+
 
 # This function classifies the unknown samples and outputs the results to a file
 # The file name is generated using the current timestamp and the number of dimensions
