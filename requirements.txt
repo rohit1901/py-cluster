@@ -2,3 +2,4 @@ matplotlib~=3.7.2
 seaborn~=0.11.2
 numpy~=1.25.2
 ruff~=0.0.290
+pytest~=7.4.2

@@ -13,7 +13,7 @@ class TestDataUtils(unittest.TestCase):
         self.assertAlmostEqual(distance, 5.0)
 
     def test_load_data(self):
-        filename = "../datasets/test_data.txt"
+        filename = "test_data.txt"
         with open(filename, "w") as file:
             file.write("1.0 2.0\n3.0 4.0\n")
 
