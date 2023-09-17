@@ -1,19 +1,19 @@
-# classify_unknown_samples.py
 from data_utils import calculate_distance
+
+"""
+Classify unknown samples based on their distances to red and blue samples.
+
+Args:
+    unknown_data (list): List of unknown data points.
+    red_data (list): List of red data points.
+    blue_data (list): List of blue data points.
+
+Returns:
+    list: A list of tuples containing the unknown sample and its class label.
+"""
 
 
 def classify_unknown_samples(unknown_data, red_data, blue_data):
-    """
-    Classify unknown samples based on their distances to red and blue samples.
-
-    Args:
-        unknown_data (list): List of unknown data points.
-        red_data (list): List of red data points.
-        blue_data (list): List of blue data points.
-
-    Returns:
-        list: A list of tuples containing the unknown sample and its class label.
-    """
     class_labels = []
 
     for unknown_sample in unknown_data:

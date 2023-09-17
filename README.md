@@ -1,40 +1,67 @@
-# ASSIGNMENT 1
+# K-Means Clustering Application
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-## Question 1
-- [2.5 marks] Read 3 files for red, green, and unknown data sets
-- For each unknown sample in the unknown data set
-  - [2.5 marks] Calculate distances from the unknown sample to all red data samples
-  - [2.5 marks] Find min_1 (minimum distance of the above distances to red samples)
-  - [2.5marks]Calculatedistancesfromtheunknownsampletoallbluedatasamples
-  - [2.5 marks] Find min_2 (minimum distance of the above distances to blue samples) o [2.5 marks] Compare min_1 and min_2 and assign class label to the unknown sample
-- [2.5 marks] Output all unknown samples and their class label to screen
-- [2.5 marks] Output all unknown samples and their class label to file
-- [2.5 marks] Data sample is tuple, red, blue and unknown data samples are stored in 3 lists
-- [2.5 marks] All functions are in a module file, no function is in main program
-- [2.5 marks] Exception handling
-- [2.5 marks] Overall
-- [10 marks] The program cannot work with any number of dimensions
-- [10 marks] External packages imported (except tkinter)
-- [10 marks] Algorithm is quite different from the given algorithm
-- [10 marks] There are no comments that explain your code
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Rohit](https://github.com/rohit1901/py-cluster/actions/workflows/test.yml/badge.svg)
+This Python application demonstrates K-Means clustering on various datasets and provides a modularized structure for loading data and performing clustering. The code is organized into two modules: `data_loader` and `clustering`.
 
-![Assignment1a.png](Assignment1a.png)
+## Getting Started
 
-## Question 2
-- [6 marks] Read data file, get number of dimensions D and number of data samples N
-- [6 marks] Input number of clusters K, create K clusters same dimension D at random, and
-set threshold to a small value
-- Repeat the following:
-  - [6 marks] For each data sample, find its nearest cluster centre
-  - [6marks]Groupdatasampleshavingthesamenearestcentretoacluster
-  - [6 marks] For each cluster, calculate new cluster centre (average of all samples) o [6marks]Calculatesumofdistancesbetweenoldandnewclustercentres
-  - [6 marks] If the sum is less than the threshold: display K cluster centres and data
-  samples on canvas then break, else: set cluster centres to new cluster centres
-- [6 marks] Data sample is tuple, all data samples are stored in a list
-- [6 marks] All functions are in a module file, no function is in main program
-- [6 marks] Exception handling
-- [10 marks] Overall (Output on canvas and Python code writing)
-- [– 20 marks] The program cannot work with any number of dimensions
-- [– 20 marks] External packages imported (except tkinter)
-- [– 20 marks] Algorithm is quite different from the given algorithm
-- [– 20 marks] There are no comments that explain your code
+These instructions will help you set up and run the project on your local machine.
+
+### Prerequisites
+
+- Python 3.x
+- NumPy
+- scikit-learn
+- seaborn
+- matplotlib
+- ruff
+- pytest
+
+You can install the required dependencies using pip:
+
+```
+pip install numpy scikit-learn seaborn matplotlib ruff pytest
+```
+
+### Installation
+
+1. Clone the repository:
+
+```
+git clone https://github.com/rohit1901/py-cluster.git
+cd py-cluster
+```
+
+2. Run the main script:
+
+```
+python main_1.py
+python main_2.py
+```
+
+## Code Structure
+
+- `data_utils` module: Responsible for loading data and extracting dimensions and samples.
+- `clustering` module: Implements K-Means clustering and related functions.
+- `classify_unknown_samples` module: Implements a function to classify unknown samples using a trained model.
+- `main_1` script: Demonstrates classification of unknown samples using nearest neighbour classification.
+- `main_2` script: Demonstrates K-Means clustering on various datasets.
+
+## Testing
+
+To run unit tests for the application, use the following commands:
+
+```
+pytest
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- This project was inspired by the need to understand K-Means clustering and its implementation in Python.
+- Thanks to the contributors and open-source libraries that made this project possible.
