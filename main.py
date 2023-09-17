@@ -8,9 +8,9 @@ from solution.classify_unknown_samples import classify_unknown_samples
 
 def main():
     # Load data
-    unknown_data = load_data("unknown_2d.txt")  # Replace with the desired dimension (2, 4, or 8)
-    red_data = load_data("red_2d.txt")  # Replace with the desired dimension (2, 4, or 8)
-    blue_data = load_data("blue_2d.txt")  # Replace with the desired dimension (2, 4, or 8)
+    unknown_data = load_data("datasets/unknown_2d.txt")  # Replace with the desired dimension (2, 4, or 8)
+    red_data = load_data("datasets/red_2d.txt")  # Replace with the desired dimension (2, 4, or 8)
+    blue_data = load_data("datasets/blue_2d.txt")  # Replace with the desired dimension (2, 4, or 8)
 
     # Classify unknown samples
     class_labels = classify_unknown_samples(unknown_data, red_data, blue_data)

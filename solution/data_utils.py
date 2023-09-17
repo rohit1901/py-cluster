@@ -20,7 +20,6 @@ def calculate_distance(point1, point2):
 
 
 def load_data(filename):
-    absolute_filename = f"datasets/{filename}"
     """
     Load data from a text file.
 
@@ -31,7 +30,7 @@ def load_data(filename):
         list: A list of data points.
     """
     data = []
-    with open(absolute_filename, "r") as file:
+    with open(filename, "r") as file:
         for line in file:
             data.append([float(x) for x in line.strip().split()])
     return data
