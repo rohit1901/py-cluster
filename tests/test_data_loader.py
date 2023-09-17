@@ -1,5 +1,3 @@
-# test_data_loader.py
-
 import unittest
 import numpy as np
 from data_utils import load_clustering_data, get_dimensions_and_samples
@@ -10,7 +8,7 @@ class TestDataLoader(unittest.TestCase):
     def test_load_data(self):
         data = load_clustering_data('test_data.txt')
         self.assertIsInstance(data, np.ndarray)
-        self.assertEqual(data.shape, (2, 2))  # Adjust shape based on your test data
+        self.assertEqual(data.shape, (2, 2))
 
     def test_get_dimensions_and_samples(self):
         data = np.array([[1, 2], [3, 4], [5, 6], [7, 8]])

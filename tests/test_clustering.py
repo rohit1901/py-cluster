@@ -1,8 +1,7 @@
-# test_clustering.py
-
 import unittest
 import numpy as np
 from clustering import initialize_cluster_centers, perform_kmeans_clustering
+
 
 class TestClustering(unittest.TestCase):
 
@@ -19,6 +18,7 @@ class TestClustering(unittest.TestCase):
         labels, new_cluster_centers = perform_kmeans_clustering(data, K, cluster_centers)
         self.assertEqual(labels.tolist(), [0, 0, 1, 1])  # Adjust labels based on your test data
         self.assertTrue(np.array_equal(new_cluster_centers, np.array([[2, 3], [6, 7]])))
+
 
 if __name__ == '__main__':
     unittest.main()

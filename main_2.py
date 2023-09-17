@@ -1,5 +1,3 @@
-# main.py
-
 import data_utils as data_loader
 import clustering
 

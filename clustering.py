@@ -1,18 +1,19 @@
-# clustering.py
-
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
+"""Initialize K cluster centers randomly with D dimensions."""
+
 
 def initialize_cluster_centers(K, D):
-    """Initialize K cluster centers randomly with D dimensions."""
     return np.random.rand(K, D)
 
 
+"""Perform K-Means clustering and return cluster labels and centers."""
+
+
 def perform_kmeans_clustering(data, K, cluster_centers, threshold=0.001):
-    """Perform K-Means clustering and return cluster labels and centers."""
     while True:
         kmeans = KMeans(n_clusters=K, init=cluster_centers, n_init=1, random_state=0)
         kmeans.fit(data)
@@ -26,8 +27,10 @@ def perform_kmeans_clustering(data, K, cluster_centers, threshold=0.001):
             cluster_centers = new_cluster_centers
 
 
+"""Plot data samples and cluster centers using Seaborn."""
+
+
 def plot_clusters(data, labels, cluster_centers):
-    """Plot data samples and cluster centers using Seaborn."""
     sns.set(style='whitegrid')
     plt.figure(figsize=(8, 6))
 
