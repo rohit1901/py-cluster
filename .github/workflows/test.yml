@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - 'feature/*'
-  workflow_call:
 jobs:
   format_test:
     runs-on: ubuntu-latest
