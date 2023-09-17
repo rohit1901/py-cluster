@@ -13,10 +13,10 @@
 - [2.5 marks] All functions are in a module file, no function is in main program
 - [2.5 marks] Exception handling
 - [2.5 marks] Overall
-- [– 10 marks] The program cannot work with any number of dimensions
-- [– 10 marks] External packages imported (except tkinter)
-- [– 10 marks] Algorithm is quite different from the given algorithm
-- [– 10 marks] There are no comments that explain your code
+- [10 marks] The program cannot work with any number of dimensions
+- [10 marks] External packages imported (except tkinter)
+- [10 marks] Algorithm is quite different from the given algorithm
+- [10 marks] There are no comments that explain your code
 
 ![Assignment1a.png](Assignment1a.png)
 
