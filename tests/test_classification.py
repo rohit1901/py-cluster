@@ -1,10 +1,8 @@
-import unittest
-
 # test_classification.py
 
 import unittest
-from solution.data_utils import calculate_distance, load_data
-from solution.classify_unknown_samples import classify_unknown_samples
+from data_utils import calculate_distance, load_data
+from classify_unknown_samples import classify_unknown_samples
 
 
 class TestDataUtils(unittest.TestCase):

@@ -1,5 +1,5 @@
 # classify_unknown_samples.py
-from solution.data_utils import calculate_distance
+from data_utils import calculate_distance
 
 
 def classify_unknown_samples(unknown_data, red_data, blue_data):
